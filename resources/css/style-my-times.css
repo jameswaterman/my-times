@@ -8,10 +8,11 @@
 
 /*header*/
 
-.logo-writing, ul li {
+.logo-writing, ul li a {
 	font-family: verdana;
 	font-size: 14px;
 	font-weight: bold;
+	color: black;
 }
 
 header {
@@ -20,6 +21,11 @@ header {
 	justify-content: space-between;
 	border-bottom: 1px solid black;
 	padding-bottom: 10px;
+	position: fixed;
+	background-color: white;
+	z-index: 2;
+	width: 100%;
+	padding-top: 8px;
 }
 
 header div.logo {
@@ -60,6 +66,8 @@ header ul {
 div.body {
 	display: flex;
 	justify-content: space-between;
+	top: 80px;
+	position: relative;
 }
 
 p {
@@ -70,6 +78,7 @@ div.column {
 	display: inline-flex;
 	flex-direction: column;
 	margin-right: 30px;
+	margin-bottom: 50px;
 }
 
 .articles {
@@ -169,7 +178,26 @@ h1.main {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
 }
 
+/* Third column. news bites*/
 
+.news-bites {
+	display: flex;
+	flex-direction: column;
+}
+
+.bite {
+	background-color: whitesmoke;
+	border-bottom: 1px solid black;
+	padding: 5px 5px 5px 13px;
+	color: dimgray;
+}
+
+h3 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 16px;
+}
 
 
 
@@ -180,8 +208,29 @@ h1.main {
 footer {
 	display: flex;
 	background-color: mediumaquamarine;
-	font-size: 12px;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	flex-direction: column;
+	position: relative;
+	margin-top: 80px;
+}
+
+.footer-link {
+	margin: 20px 30px;
+	color: black;
 	font-family: verdana;
+	font-size: 12px;
+}
+
+.footer-name {
+	font-family: georgia;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	border-right: 2px solid white;
+	padding-right: 30px;
 }
 
 
