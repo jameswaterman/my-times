@@ -215,6 +215,7 @@ footer {
 	flex-direction: column;
 	position: relative;
 	margin-top: 80px;
+	width: 100%;
 }
 
 .footer-link {
